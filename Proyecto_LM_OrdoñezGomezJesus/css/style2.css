@@ -1,0 +1,259 @@
+@font-face {
+  font-family: "modern";
+  src: url(/tipologia/Modern\ Age.ttf);
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+  --red: #dc3545;
+}
+.color-red{
+  color:var(--red)
+}
+/*LETREROS GRANDES*/
+.big-text{
+  font-size: 100px;
+  -webkit-text-stroke: 0.5px black;
+  color: transparent; 
+  font-family:"modern";
+}
+/*ESTO ES PARA DARLE FORMA AL LETRERO DEL VIDEO DE YOUTUBE*/
+.video{
+  margin-top: 40px;
+  text-align: center;
+  font-size: 40px;
+  -webkit-text-stroke: 0.5px black;
+  color: transparent; 
+}
+.overlay h1 {
+  text-align: center;
+}
+
+/*MIS CARDS CON SUS ESPICIFICACIONES PARA PANTALLA GRANDE*/
+.image-container {
+  position: relative;
+}
+.image-container img {
+  width: 100%;
+}
+.card1 {
+  text-align: justify;
+  width: 30rem;
+  position: absolute;
+  top: 70%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  border: dashed black;
+  padding: 10px;
+  z-index: 1;
+}
+.card2 {
+  text-align: justify;
+  width: 30rem;
+  position: absolute;
+  top: 35%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  border: dashed black;
+  padding: 10px;
+  z-index: 1;
+}
+.card3 {
+  text-align: justify;
+  width: 30rem;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  border: dashed black;
+  padding: 10px;
+  z-index: 1;
+}
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.card-text {
+  font-weight: bold;
+  font-size: 20px;
+}
+<!----MOVIMIENTO DE LAS CARD EN PANTALLA GRANDE----->
+.card1 img {
+  transition: transform 0.2s;
+  position: relative;
+  z-index: 0;
+}
+.card img:hover {
+  transform: scale(1.5);
+  z-index: 1;
+}
+.card1 img {
+  transition: transform 0.2s;
+  position: relative;
+  z-index: 0;
+}
+.card1 img:hover {
+  transform: scale(1.5);
+  z-index: 1;
+}
+.card2 img {
+  transition: transform 0.2s;
+  position: relative;
+  z-index: 0;
+}
+.card2 img:hover {
+  transform: scale(1.5);
+  z-index: 1;
+}
+.card3 img {
+  transition: transform 0.2s;
+  position: relative;
+  z-index: 0;
+}
+.card3 img:hover {
+  transform: scale(1.5);
+  z-index: 1;
+}
+
+
+/*para hacer que mis letreros cambien el color cuando paso el raton por encima*/
+.fcc-btn:hover{
+  color: red;
+}
+.fcc-btn {
+  text-decoration: none;
+  text-align: center;
+  position:absolute;
+  margin-top: -150px;
+  border: solid red;
+  z-index: 1;
+  background-image: radial-gradient(white 1px, transparent 1px);
+  background-size: 10px 10px;
+  width: 600px;
+  color:white;
+}
+
+/*para controlar el video de youtube*/
+.youtube-embed {
+  position: relative;
+  padding-bottom: 56.25%; 
+  height: 0;
+  overflow: hidden;
+}
+.youtube-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/*hasta aqui el video de youtube*/
+
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .fcc-btn {
+    margin-left: 70px;
+    background-image: radial-gradient(black 1px, transparent 1px);
+    color:black;
+    position:static;
+    z-index: initial;
+    width: 100%;
+  }
+  .post1 {
+    margin-left: 20px; 
+    font-size: 10px;
+    position:static;
+    z-index: initial;
+    transform: none;
+    margin: 10px 0px 10px 10px;
+  }
+  .card1 {
+    max-width: 470px;
+    position: static;
+    transform: none;
+    margin: 10px 0px 10px 10px;
+    z-index: initial;
+
+  }
+  .card2 {
+    max-width: 470px;
+    position: static;
+    transform: none;
+    margin-top: 10px;
+    z-index: initial;
+  }
+  .card3 {
+    max-width: 470px;
+    transform: none;
+    margin-top: 10px; 
+    position: static;
+    z-index: initial;
+  }
+  .overlay {
+    margin-top: -550px;
+  }
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .big-text {
+    font-size: 70px;
+    -webkit-text-stroke: 3px black;
+    color: transparent; 
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .fcc-btn {
+    margin: 40px 0px 40px 10px;
+    background-image: radial-gradient(black 1px, transparent 1px);
+    color:black;
+    position:static;
+    z-index: initial;
+    width: 100%;
+  }
+  .card1 {
+    transform: none;
+    position: static;
+    z-index: initial;
+    width: 100%;
+  }
+  .card2 {
+
+    transform: none;
+    position: static;
+    z-index: initial;
+    width: 100%;
+  }
+  .card3 {
+    transform: none;
+    position: static;
+    z-index: initial;
+    width: 100%;
+  }
+
+  .card1 img:hover {
+    transform: scale(1.1);
+    z-index: 1;
+  }
+
+  .card2 img:hover {
+    transform: scale(1.1);
+    z-index: 1;
+  }
+
+  .card3 img:hover {
+    transform: scale(1.1);
+    z-index: 1;
+  }
+  
+
+}
+

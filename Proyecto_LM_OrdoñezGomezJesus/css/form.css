@@ -1,0 +1,51 @@
+ .custom-input {
+    font-family: Arial, sans-serif;
+    font-size:small;
+  }
+  :root {
+    --red: #dc3545;
+  }
+  .color-red{
+    color:var(--red)
+  }
+  nav {
+    background-color: #acacac;
+    color: #fff;
+  
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  nav ul li {
+    float: left;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  nav ul li a:hover {
+    background-color: #e4e4e4;
+  }
+  .sublista {
+    display: none;
+  
+  }
+  .sublista li a {
+    color: rgb(99, 99, 99);
+  }
+  .nav-item:hover .sublista {
+    display: block;
+    opacity: 1;
+  }
+  .progress-bar{
+    background-color:black;
+    width: 25%
+  }
